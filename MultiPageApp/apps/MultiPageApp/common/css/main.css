@@ -1,0 +1,366 @@
+#header {
+	text-align: center;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+	font-size: px;
+	height: 70px;
+	line-height: 20px;
+	border-bottom: 1px solid white;
+	position: fixed;
+	width: 100%;
+}
+
+#wrapper {
+	width: 90%;
+	margin: auto;
+	padding-top: 38px;
+}
+
+button 
+
+.Button {
+	width: 100%;
+	height: 20em;
+	font-size: 2em;
+	margin: 30px auto;
+}
+
+input
+
+.SmarterCitiesButton {
+	background:
+		url(MultiPageApp/apps/MultiPageApp/common/images/smarterCities.png);
+	
+}
+
+.appButton {
+	width: 100%;
+	height: 20em;
+	font-size: 2em;
+	margin: 30px auto;
+}
+
+p {
+	padding: 10px;
+}
+
+/* Provide different styling for iOS 7. */
+body.wl_ios7 {
+	padding-top: 0 !important;
+}
+
+.wl_ios7 #header {
+	padding-top: 9px;
+}
+
+.wl_ios7 #wrapper {
+	padding-top: 55px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: highlight; /*GhostWhite*/
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 200%;
+	color: white;
+	text-align: Center;
+}
+
+h2
+
+.arborescence {
+	font-size: 100%;
+	color: grey; /*DeepSkyBLue*/
+	padding-left: 15px;
+	text-align: align-left;
+}
+
+.solutionTitle {
+	font-size: 100%;
+	color: #00BFFF; /*DeepSkyBLue*/
+	padding-left: 15px;
+	text-align: Center;
+}
+
+p, ul, li, td {
+	color: black;
+	text-align: justify;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+a:link {
+	color: green;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+a:active, a:focus {
+	color: red;
+}
+
+table {
+	border: #000000;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	font-family: monospace;
+	border: thin solid #6495ed;
+	width: 50%;
+	padding: 20px;
+	background-color: #D0E3FA;
+	background-image: url(sky.jpg);
+}
+
+td
+
+.colonneSolutions1 {
+	font-family: arial;
+	width: 30%;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.colonneSolutions2 {
+	font-family: arial;
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
+	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
+	background: -o-radial-gradient(center, circle, Black, GhostWhite);
+	background: radial-gradient(center, circle, Black, GhostWhite);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.colonneMainPage1 {
+	font-family: arial;
+	width: 400px;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.colonneMainPage2 {
+	font-family: arial;
+	width: 400px;
+	padding: 20px;
+	text-align: center;
+	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
+	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
+	background: -o-radial-gradient(center, circle, Black, GhostWhite);
+	background: radial-gradient(center, circle, Black, GhostWhite);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.gradient {
+	/* fallback color */
+	background-color: GhostWhite;
+	/* fallback image */
+	background-image: url(images/gradient.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, Silver, GostWhite);
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(radial, center center, 0, center center, 200, from(Silver
+		), to(GostWhite));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, Silver, GostWhite);
+	height: 200px;
+	width: 200px;
+	padding: 25px;
+	margin-left: 25px;
+}
+
+.colonneIndustries1 {
+	font-family: arial;
+	width: 80%;
+	padding: 80px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.colonneIndustries2 {
+	font-family: arial;
+	width: 20%;
+	padding: 80px;
+	text-align: center;
+	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
+	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
+	background: -o-radial-gradient(center, circle, Black, GhostWhite);
+	background: radial-gradient(center, circle, Black, GhostWhite);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+caption {
+	font-family: sans-serif;
+}
+
+tr 
+
+.ligneSolutions1 {
+	font-family: arial;
+	height: 25%;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneSolutions2 {
+	font-family: arial;
+	height: 25%;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneSolutions3 {
+	font-family: arial;
+	height: 25%;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneIndustries1 {
+	font-family: arial;
+	height: 20%;
+	padding: 15px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneIndustries2 {
+	font-family: arial;
+	height: 20%;
+	padding: 15px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneIndustries3 {
+	font-family: arial;
+	height: 40px;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneMainPage1 {
+	font-family: arial;
+	height: 150px;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneMainPage2 {
+	font-family: arial;
+	height: 150px;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ligneMainPage3 {
+	font-family: arial;
+	height: 150px;
+	padding: 20px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 25px;
+	margin-right: 25px;
+}
