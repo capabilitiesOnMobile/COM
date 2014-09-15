@@ -1,3 +1,4 @@
+/*Affichage bandeau supérieur */
 #header {
 	text-align: center;
 	background-color: #1D4D90;
@@ -16,7 +17,7 @@
 	padding-top: 38px;
 }
 
-button 
+button /*Paramètres d'affichage d'un boutton*/  
 
 .Button {
 	width: 100%;
@@ -25,12 +26,11 @@ button
 	margin: 30px auto;
 }
 
-input
+input /*Paramètres d'affichage d'un imput type boutton*/ 
 
 .SmarterCitiesButton {
 	background:
 		url(MultiPageApp/apps/MultiPageApp/common/images/smarterCities.png);
-	
 }
 
 .appButton {
@@ -40,6 +40,7 @@ input
 	margin: 3px auto;
 }
 
+/*Paramètre du texte normal*/
 p {
 	padding: 10px;
 }
@@ -57,10 +58,12 @@ body.wl_ios7 {
 	padding-top: 55px;
 }
 
+
 html, body {
 	margin: 0;
 	padding: 0;
 }
+
 
 body {
 	background-color: highlight; /*GhostWhite*/
@@ -76,19 +79,56 @@ h1 {
 
 h2
 
-.arborescence {
+.debutArborescence {
 	font-size: 100%;
-	color: grey; /*DeepSkyBLue*/
+	font-color: grey;
 	padding-left: 15px;
 	text-align: align-left;
 }
 
+.milieuArborescence {
+	
+	font-size: 80%;
+	font-color: grey; /*DeepSkyBLue*/
+	padding-left: 15px;
+	text-align: align-left;
+}
+
+.finArborescenceIndusrty {
+	font-size: 80%;
+	font-color: red; /*DeepSkyBLue*/
+	padding-left: 15px;
+	text-align: align-left;
+}
+
+.finArborescenceSol {
+	
+	font-size: 60%;
+	font-color: red;
+	padding-left: 15px;
+	text-align: align-left;
+}
+
+
 .solutionTitle {
 	font-size: 100%;
-	color: #00BFFF; /*DeepSkyBLue*/
+	font-color: #00BFFF; /*DeepSkyBLue*/
 	padding-left: 15px;
 	text-align: Center;
 }
+
+
+	
+.finArborescenceSol {
+	
+	font-size: 60%;
+	color: red;
+	padding-left: 15px;
+	text-align: align-left;
+	
+	
+}
+
 
 p, ul, li, td {
 	color: black;
@@ -132,6 +172,50 @@ th {
 
 td
 
+/*Paramètres des colonnes de la page d'affichage d'une solution particulière*/
+
+.colonneArborescence1 {
+	font-family: arial;
+	width: 33%;
+	padding: 5px;
+	text-align: align-left;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.colonneArborescence2 {
+	font-family: arial;
+	width: 33%;
+	padding: 5px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.colonneArborescence3 {
+	font-family: arial;
+	width: 33%;
+	padding: 5px;
+	text-align: center;
+	/*background-color: Silver;*/
+	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
+	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
+	background-image: -o-radial-gradient(center, Black 0%, White 100%);
+	background-image: radial-gradient(center, Black 0%, White 100%));
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .colonneSolutions1 {
 	font-family: arial;
 	width: 30%;
@@ -158,6 +242,8 @@ td
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
+/*Paramètres d'affichage des colonnes de la page d'accueil*/
 
 .colonneMainPage1 {
 	font-family: arial;
@@ -206,6 +292,9 @@ td
 	margin-left: 25px;
 }
 
+
+/* Paramètres d'affichage des colonnes du template des Industries*/
+
 .colonneIndustries1 {
 	font-family: arial;
 	width: 80%;
@@ -238,6 +327,8 @@ caption {
 }
 
 tr 
+
+/*Paramètres d'affichage des colonnes de la page d'affichage d'une solution particulière*/
 
 .ligneSolutions1 {
 	font-family: arial;
@@ -281,6 +372,8 @@ tr
 	margin-right: 25px;
 }
 
+/*Paramètres d'affichage des colonnes de la page des industries*/
+
 .ligneIndustries1 {
 	font-family: arial;
 	height: 20%;
@@ -322,6 +415,8 @@ tr
 	margin-left: 25px;
 	margin-right: 25px;
 }
+
+/*Paramètres d'affichage des colonnes de la page d'accueil*/
 
 .ligneMainPage1 {
 	font-family: arial;

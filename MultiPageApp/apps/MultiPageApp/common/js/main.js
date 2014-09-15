@@ -11,6 +11,9 @@
 
  */
 
+/* Fichier de script de la page "index.html" */
+
+
 var pagesHistory = [];
 var currentPage = {};
 var path = "";
