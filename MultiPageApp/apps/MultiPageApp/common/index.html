@@ -12,38 +12,50 @@
     IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
   
  -->
- 
- 
- <!--  Ce fichier est générique. Seul le titre est à modifier. -->
- 
- 
+
+
+<!--  Ce fichier est générique. Seul le titre est à modifier. -->
+
+
 <html>
-   	<head>
-   		<meta charset="UTF-8">
-   		<title>IBM Business Solution Center</title>
-   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-   		<!--
+<head>
+<meta charset="UTF-8">
+<title>IBM Business Solution Center</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<!--
     		<link rel="shortcut icon" href="images/favicon.png">
     		<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
     	-->
-   		
-   		
-   		<link rel="stylesheet" href="css/main.css">
-   		<script>window.$ = window.jQuery = WLJQ;</script>
-   	</head>
-   	<body style="display: none;">
-		<!-- This is static header, it will be shown always -->
-		<div id="header">
-			<h1>Nice - Paris GISC</h1>
-		</div>
-		
-		<div id="wrapper">
-			<!-- This is a placeholder for dynamic page content -->
-			<div id="pagePort"></div>
-		</div>
-		
-   		<script src="js/initOptions.js"></script>
-   		<script src="js/main.js"></script>
-   		<script src="js/messages.js"></script>
-   	</body>
+
+
+<link rel="stylesheet" href="css/main.css">
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+</head>
+<body style="display: none;">
+
+	<!-- Le wrapper c'est un peu comme l'amballage global de l'app dans lequel on fait un tableau  -->
+	<div id="wrapper">
+		<table>
+			<tr>
+				<td class="colonneIndex1"><div id="bandeau"></div></td>
+				<td class="colonneIndex2"><div id="back"></div></td>
+			</tr>
+			<tr>
+				<td class="colonneIndex1"><div id="pagePort"></div></td>
+				<td class="colonneIndex2"><div id="logo"></div></td>
+			</tr>
+			<tr>
+				<td class="colonneIndex1"><div id="bandeau"></div></td>
+				<td class="colonneIndex2"><div id="back"></div></td>
+			</tr>
+		</table>
+	</div>
+
+	<script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+</body>
 </html>
