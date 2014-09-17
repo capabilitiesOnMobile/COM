@@ -1,5 +1,5 @@
 /*Affichage bandeau supérieur */
-#header {
+/*#header {
 	text-align: center;
 	background-color: #1D4D90;
 	color: #F9FAFB;
@@ -11,10 +11,49 @@
 	width: 100%;
 }
 
+*/
+
 #wrapper {
-	width: 90%;
-	margin: auto;
-	padding-top: 38px;
+	background-color: #181818;
+	heigh:768px;
+	width: 1024px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#pagePort {
+	background-color: #1D4D90;
+	heigh:60%;
+	width:70%;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#bandeau {
+	background-color: #000033;
+	heigh:50%;
+	width: 70%;
+	margin: 0;
+	padding: 0px;
+}
+
+#logo {
+	background-color: #181818;
+	heigh:60%;
+	width:30%;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#back {
+	background-color: #003399;
+	heigh:50%;
+	width: 30%;
+	margin: 0px;
+	padding: 0px;
 }
 
 button /*Paramètres d'affichage d'un boutton*/  
@@ -45,19 +84,6 @@ p {
 	padding: 10px;
 }
 
-/* Provide different styling for iOS 7. */
-body.wl_ios7 {
-	padding-top: 0 !important;
-}
-
-.wl_ios7 #header {
-	padding-top: 9px;
-}
-
-.wl_ios7 #wrapper {
-	padding-top: 55px;
-}
-
 
 html, body {
 	margin: 0;
@@ -66,7 +92,7 @@ html, body {
 
 
 body {
-	background-color: highlight; /*GhostWhite*/
+	background-color: #181818 ; /*DarkGrey*/
 	font-family: Arial, sans-serif;
 	font-size: 100%;
 }
@@ -156,72 +182,21 @@ a:active, a:focus {
 }
 
 table {
-	border: #000000;
-	border-collapse: collapse;
+	border-collapse;
+	heigh:100%;
 	width: 100%;
-}
-
-th {
-	font-family: monospace;
-	border: thin solid #6495ed;
-	width: 50%;
-	padding: 20px;
-	background-color: #D0E3FA;
-	background-image: url(sky.jpg);
 }
 
 td
 
 /*Paramètres des colonnes de la page d'affichage d'une solution particulière*/
 
-.colonneArborescence1 {
-	font-family: arial;
-	width: 20%;
-	padding: 5px;
-	text-align: align-left;
-	/*background-color: Silver;*/
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.colonneArborescence2 {
-	font-family: arial;
-	width: 20%;
-	padding: 5px;
-	text-align: center;
-	/*background-color: Silver;*/
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.colonneArborescence3 {
-	font-family: arial;
-	width: 20%;
-	padding: 5px;
-	text-align: center;
-	/*background-color: Silver;*/
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
 .colonneSolutions1 {
 	font-family: arial;
 	width: 30%;
 	padding: 20px;
 	text-align: center;
-	/*background-color: Silver;*/
+	background-color: Silver;
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -247,49 +222,28 @@ td
 
 .colonneMainPage1 {
 	font-family: arial;
-	width: 400px;
-	padding: 20px;
+	width: 300x;
+	padding: 0px;
 	text-align: center;
-	/*background-color: Silver;*/
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
 	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .colonneMainPage2 {
 	font-family: arial;
-	width: 400px;
-	padding: 20px;
+	width: 300px;
+	padding: 0px;
 	text-align: center;
 	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
 	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
 	background: -o-radial-gradient(center, circle, Black, GhostWhite);
 	background: radial-gradient(center, circle, Black, GhostWhite);
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.gradient {
-	/* fallback color */
-	background-color: GhostWhite;
-	/* fallback image */
-	background-image: url(images/gradient.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	/* Firefox 3.6+ */
-	background: -moz-radial-gradient(circle, Silver, GostWhite);
-	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(radial, center center, 0, center center, 200, from(Silver
-		), to(GostWhite));
-	/* Safari 5.1+, Chrome 10+ */
-	background: -webkit-radial-gradient(circle, Silver, GostWhite);
-	height: 200px;
-	width: 200px;
-	padding: 25px;
-	margin-left: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 
@@ -300,7 +254,7 @@ td
 	width: 80%;
 	padding: 80px;
 	text-align: center;
-	/*background-color: Silver;*/
+	/*background-color: Silver;*//*
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -322,6 +276,7 @@ td
 	margin-right: 5px;
 }
 
+
 caption {
 	font-family: sans-serif;
 }
@@ -335,7 +290,7 @@ tr
 	height: 25%;
 	padding: 20px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -349,7 +304,7 @@ tr
 	height: 25%;
 	padding: 20px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -363,7 +318,7 @@ tr
 	height: 25%;
 	padding: 20px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -379,7 +334,7 @@ tr
 	height: 20%;
 	padding: 15px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -393,7 +348,7 @@ tr
 	height: 20%;
 	padding: 15px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -407,7 +362,7 @@ tr
 	height: 40px;
 	padding: 20px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
@@ -421,47 +376,44 @@ tr
 .ligneMainPage1 {
 	font-family: arial;
 	height: 150px;
-	padding: 20px;
+	padding: 0px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
 	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .ligneMainPage2 {
 	font-family: arial;
 	height: 150px;
-	padding: 20px;
+	padding: px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
 	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .ligneMainPage3 {
 	font-family: arial;
 	height: 150px;
-	padding: 20px;
+	padding: 0px;
 	text-align: center;
-	/*background-color: Silver;*/
+
 	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
 	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
 	background-image: -o-radial-gradient(center, Black 0%, White 100%);
 	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
-
-
-
 
 
 
