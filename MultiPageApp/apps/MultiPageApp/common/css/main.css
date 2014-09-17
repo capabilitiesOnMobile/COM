@@ -13,7 +13,8 @@
 }*/
 
 #wrapper {
-	background-color: #181818;
+	background-color : #121417;
+	/*background-color: #181818;*/
 	heigh: 100%;
 	width: 100%;
 	margin: 0px;
@@ -21,7 +22,8 @@
 }
 
 #pagePort {
-	background-color: #181818;
+	background-color : #121417;
+	/*background-color: #181818;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -33,7 +35,8 @@
 }
 
 #logo {
-	background-color: #181818;
+	background-color : #121417;
+	/*background-color: #181818;*/
 	margin: 0px;
 	padding: 0px;
 }
