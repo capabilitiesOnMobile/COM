@@ -22,18 +22,47 @@
 	<br>
 
 	<!-- Arborescence -->
-
-	<td class="colonneArborescence1"><h2 class="debutArborescence">Global
-			Industry Solution Center ></h2></td>
+	<td class="colonneArborescence1"><h2 class="debutArborescence">Global Industry Solution Center ></h2></td>
 	<td class="colonneArborescence2"></td>
 	<td class="colonneArborescence3"></td>
 
-
-
-	<!-- Tableau de 3 lignes et deux colonnes, avec fusion de la dernière ligne -->
-	<table
-		summary="exemple de structure d'un tableau de données 2 lignes, 2 colonnes">
-
+	<!-- Tableau de 5 lignes et 1 colonne -->
+	<table summary="exemple de structure d'un tableau de donnes 2 lignes, 2 colonnes">
+		<tr class="mainPageCell"><td class="mainPageCell">
+			<label class="buttonMainPage" id="LoadButtonE&U"
+		           onclick="currentPage.loadPage('Industries/E&U');">
+		           <img class="thumbnail" src="pages/Logos/Logo-EnergyUtilities.png" alt="" />
+		           Energy & Utilities</label>
+		</td></tr>
+		
+		<tr class="mainPageCell"><td class="mainPageCell">
+			<label class="buttonMainPage" id="LoadButtonTelco"
+		           onclick="currentPage.loadPage('Industries/Telco');">
+		           <img class="thumbnail" src="pages/Logos/Logo-Telecom.png" alt="" />
+		           Telco</label>
+		</td></tr>
+		
+		<tr class="mainPageCell"><td class="mainPageCell">
+			<label class="buttonMainPage" id="LoadButtonSmarterCities"
+		           onclick="currentPage.loadPage('Industries/SmarterCities');">
+		           <img class="thumbnail" src="pages/Logos/Logo-SmarterCities.png" alt="" />
+		           Smarter Cities</label>
+		</td></tr>
+		
+		<tr class="mainPageCell"><td class="mainPageCell">
+			<label class="buttonMainPage" id="LoadButtonRetail"
+		           onclick="currentPage.loadPage('Industries/Retail');">
+		           <img class="thumbnail" src="pages/Logos/Logo-Retail.png" alt="" />
+		           Retail</label></tr>
+		</td></tr>
+		
+		<tr class="mainPageCell"><td class="mainPageCell">
+			<label class="buttonMainPage" id="LoadButtonGovernment"
+		           onclick="currentPage.loadPage('Industries/Government');">
+		           <img class="thumbnail" src="pages/Logos/Logo-Watson.png" alt="" />
+		           Insurance</label></tr>
+		</td></tr>
+		<!--
 		<tr class="ligneMainPage1">
 			<td class="colonneMainPage1"><input type="button"
 				class="smarterCitiesButton" value="Energy & Utilities"
@@ -44,7 +73,7 @@
 		</tr>
 
 		<tr class="ligneMainPage2">
-			<td class="colonneMainPage2"><input type="button"
+			<td class="colonneMainPage1"><input type="button"
 				class="smarterCitiesButton" value="Smarter Cities"
 				id="LoadSmarterCitiesButton"
 				onclick="currentPage.loadPage('Industries/SmarterCities');" /></td>
@@ -56,6 +85,7 @@
 			<td class="colonneMainPage1" colspan="2"><input type="button"
 				class="appButton" value="Government" id="LoadPage2Button"></td>
 		</tr>
+		-->
 	</table>
 </body>
 

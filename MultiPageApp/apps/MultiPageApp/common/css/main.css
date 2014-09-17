@@ -245,6 +245,15 @@ td
 
 /*Paramètres d'affichage des colonnes de la page d'accueil*/
 
+.mainPageCell {
+	font-family: arial;
+	width: 400px;
+	padding: 20px;
+	text-align: left;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+}
+
 .colonneMainPage1 {
 	font-family: arial;
 	width: 400px;
@@ -290,6 +299,25 @@ td
 	width: 200px;
 	padding: 25px;
 	margin-left: 25px;
+}
+
+.gradient_new {
+	/* Old browsers */
+	background: rgb(206,220,231);
+	/* FF3.6+ */
+	background: -moz-linear-gradient(left,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1)));
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* IE10+ */
+	background: -ms-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* W3C */
+	background: linear-gradient(to right,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );
 }
 
 
@@ -568,7 +596,23 @@ body {
 	text-align: center;
 }
 
-.button_test {
+img.thumbnail {
+   width: 56px;
+   height: 42px;
+}
+
+.buttonMainPage {
+	width: 100%;
+	cursor: pointer;
+	background: #27ae60;
+	display: inline-block;
+	padding: 1.0em 0.0em;
+	color: #fff;
+	border-radius: 3px;
+	text-align: left;
+}
+
+.button_back {
 	width: 100%;
 	cursor: pointer;
 	background: #27ae60;
@@ -576,6 +620,7 @@ body {
 	padding: .5em 1em;
 	color: #fff;
 	border-radius: 3px;
+	text-align: center;
 }
 
 .button_green {
