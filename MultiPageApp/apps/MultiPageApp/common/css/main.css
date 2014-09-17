@@ -1,4 +1,4 @@
-/*Affichage bandeau supérieur */
+/* Affichage bandeau supérieur */
 /*
 #header {
 	text-align: center;
@@ -45,7 +45,7 @@
 	margin: 0px;
 }
 
-button /*Paramètres d'affichage d'un boutton*/    
+button /* Paramètres d'affichage d'un boutton */    
 
 .Button {
 	width: 100%;
@@ -54,7 +54,7 @@ button /*Paramètres d'affichage d'un boutton*/
 	margin: 30px auto;
 }
 
-input /*Paramètres d'affichage d'un imput type boutton*/   
+input /* Paramètres d'affichage d'un imput type boutton */   
 
 .SmarterCitiesButton {
 	background:
@@ -68,7 +68,7 @@ input /*Paramètres d'affichage d'un imput type boutton*/
 	margin: 3px auto;
 }
 
-/*Paramètre du texte normal*/
+/* Paramètres du texte normal */
 p {
 	padding: 10px;
 }
@@ -167,10 +167,7 @@ table {border-collapse;
 	width: 100%;
 }
 
-td
-	/*Paramètres des colonnes de la page d'affichage d'une solution particulière*/
-	
-	
+td /* Paramètres des colonnes de la page d'affichage d'une solution particulière */
 
 .caseBandeau {
 	font-family: arial;
@@ -243,7 +240,7 @@ td
 	margin-right: 5px;
 }
 
-/*Parametres d'affichage des cases de la page d'accueil*/
+/* Paramètres d'affichage des cases de la page d'accueil */
 .mainPageCell {
 	font-family: arial;
 	width: 400px;
@@ -257,33 +254,6 @@ td
 /*	color: -ms-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* IE10+ */
 /*	color: linear-gradient(to right,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* W3C */
 /*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 */
-}
-
-.colonneMainPage1 {
-	font-family: arial;
-	width: 300x;
-	padding: 0px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.colonneMainPage2 {
-	font-family: arial;
-	width: 300px;
-	padding: 0px;
-	text-align: center;
-	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
-	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
-	background: -o-radial-gradient(center, circle, Black, GhostWhite);
-	background: radial-gradient(center, circle, Black, GhostWhite);
-	margin-right: 0px;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
 .gradient {
@@ -365,8 +335,7 @@ caption {
 	font-family: sans-serif;
 }
 
-tr
-	/*Paramètres d'affichage des colonnes de la page d'affichage d'une solution particulière*/
+tr /*Paramètres d'affichage des colonnes de la page d'affichage d'une solution particulière*/
 
 .ligneSolutions1 {
 	font-family: arial;
@@ -445,46 +414,6 @@ tr
 	background-image: radial-gradient(center, Black 0%, White 100%));
 	margin-left: 25px;
 	margin-right: 25px;
-}
-
-/*Paramètres d'affichage des colonnes de la page d'accueil*/
-.ligneMainPage1 {
-	font-family: arial;
-	height: 150px;
-	padding: 0px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.ligneMainPage2 {
-	font-family: arial;
-	height: 150px;
-	padding: px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.ligneMainPage3 {
-	font-family: arial;
-	height: 150px;
-	padding: 0px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 0px;
-	margin-right: 0px;
 }
 
 /* ===============================
@@ -589,8 +518,8 @@ body {
 }
 
 img.thumbnail {
-	width: 56px;
-	height: 42px;
+	width: 45px;
+	height: 45px;
 }
 
 .buttonMainPage {
