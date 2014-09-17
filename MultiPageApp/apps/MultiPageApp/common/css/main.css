@@ -176,7 +176,7 @@ td
 
 .colonneArborescence1 {
 	font-family: arial;
-	width: 33%;
+	width: 20%;
 	padding: 5px;
 	text-align: align-left;
 	/*background-color: Silver;*/
@@ -190,7 +190,7 @@ td
 
 .colonneArborescence2 {
 	font-family: arial;
-	width: 33%;
+	width: 20%;
 	padding: 5px;
 	text-align: center;
 	/*background-color: Silver;*/
@@ -204,7 +204,7 @@ td
 
 .colonneArborescence3 {
 	font-family: arial;
-	width: 33%;
+	width: 20%;
 	padding: 5px;
 	text-align: center;
 	/*background-color: Silver;*/
