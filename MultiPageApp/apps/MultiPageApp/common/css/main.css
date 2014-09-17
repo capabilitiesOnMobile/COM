@@ -249,6 +249,15 @@ td
 
 /*Paramètres d'affichage des colonnes de la page d'accueil*/
 
+.mainPageCell {
+	font-family: arial;
+	width: 400px;
+	padding: 20px;
+	text-align: left;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+}
+
 .colonneMainPage1 {
 	font-family: arial;
 	width: 300x;
@@ -271,8 +280,52 @@ td
 	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
 	background: -o-radial-gradient(center, circle, Black, GhostWhite);
 	background: radial-gradient(center, circle, Black, GhostWhite);
+<<<<<<< HEAD
 	margin-left: 0px;
 	margin-right: 0px;
+=======
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.gradient {
+	/* fallback color */
+	background-color: GhostWhite;
+	/* fallback image */
+	background-image: url(images/gradient.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, Silver, GostWhite);
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(radial, center center, 0, center center, 200, from(Silver
+		), to(GostWhite));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, Silver, GostWhite);
+	height: 200px;
+	width: 200px;
+	padding: 25px;
+	margin-left: 25px;
+}
+
+.gradient_new {
+	/* Old browsers */
+	background: rgb(206,220,231);
+	/* FF3.6+ */
+	background: -moz-linear-gradient(left,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1)));
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* IE10+ */
+	background: -ms-linear-gradient(left,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* W3C */
+	background: linear-gradient(to right,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );
+>>>>>>> branch 'master' of https://github.com:443/capabilitiesOnMobile/COM.git
 }
 
 
@@ -544,40 +597,72 @@ tr
 /* Other
  * =============================== */
 body {
-  padding: 1%;
-  font: 1/1.5em sans-serif;
-  text-align: center;
+	padding: 1%;
+	font: 1/1.5em sans-serif;
+	text-align: center;
 }
 
-.btn {
-  cursor: pointer;
-  background: #27ae60;
-  display: inline-block;
-  padding: .5em 1em;
-  color: #fff;
-  border-radius: 3px;
+img.thumbnail {
+   width: 56px;
+   height: 42px;
 }
 
-.btn:hover,
-.btn:focus {
-  background: #2ecc71;
+.buttonMainPage {
+	width: 100%;
+	cursor: pointer;
+	background: #27ae60;
+	display: inline-block;
+	padding: 1.0em 0.0em;
+	color: #fff;
+	border-radius: 3px;
+	text-align: left;
 }
 
-.btn:active {
-  background: #27ae60;
-  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+.button_back {
+	width: 100%;
+	cursor: pointer;
+	background: #27ae60;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
 }
 
-.btn--blue {
-  background: #2980b9;
+.button_green {
+	cursor: pointer;
+	background: #27ae60;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #fff;
+	border-radius: 3px;
 }
 
-.btn--blue:hover,
-.btn--blue:focus {
+.button_green:hover,
+.button_green:focus {
+	background: #2ecc71;
+}
+
+.button_green:active {
+	background: #27ae60;
+	box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+
+.button_blue {
+	cursor: pointer;
+	background: #2980b9;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.button_blue:hover,
+.button_blue:focus {
   background: #3498db;
 }
 
-.btn--blue:active {
+.button_blue:active {
   background: #2980b9;
 }
 
