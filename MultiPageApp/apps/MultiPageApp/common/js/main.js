@@ -41,4 +41,12 @@ function wlCommonInit(){
 			}
 		});
 	});
+	
+	$("#logo").load(path + "pages/Logo.html", function(){
+		$.getScript(path + "js/logo.js", function() {
+			if (currentPage.init) {
+				currentPage.init();
+			}
+		});
+	});
 }
