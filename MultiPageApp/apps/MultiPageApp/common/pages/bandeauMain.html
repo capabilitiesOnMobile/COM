@@ -1,5 +1,4 @@
-/*
- *
+<!--
     COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
     these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
     application programs conforming to the application programming interface for the operating platform for which the sample code is written.
@@ -8,37 +7,29 @@
     FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
     INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
     IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+  
+ -->
 
- */
+<!-- Appel du script de MainPage -->
 
-/* Fichier de script de la page "index.html" */
+<script>
+	$.getScript(path + "js/bandeauMain.js");
+</script>
+
+<body style="display: none;">
+	<!-- L'UI de la page commence ici  -->
+	<!-- Tableau de 3 lignes et deux colonnes, avec fusion de la dernière ligne -->
+
+	<!-- Tableau de 5 lignes et 1 colonne -->
+	<table>
+		<tr>
+			<td><h1>Industries</h1></td>
+		<tr>
+			<tr>
+	<td><h2>IBM Global Industry Solution Center ></h2></td>
+		</tr>
+		</table>
+</body>
 
 
-var pagesHistory = [];
-var currentPage = {};
-var path = "";
 
-function wlCommonInit(){
-	
-	// Special case for Windows Phone 8 only.
-	if (WL.Client.getEnvironment() == WL.Environment.WINDOWS_PHONE_8) {
-	    path = "/www/default/";
-	}
-	
-	$("#bandeau").load(path + "pages/bandeauMain.html", function(){
-		$.getScript(path + "js/bandeauMain.js", function() {
-			if (currentPage.init) {
-				currentPage.init();
-			}
-		});
-	});
-	
-	
-	$("#pagePort").load(path + "pages/MainPage.html", function(){
-		$.getScript(path + "js/MainPage.js", function() {
-			if (currentPage.init) {
-				currentPage.init();
-			}
-		});
-	});
-}

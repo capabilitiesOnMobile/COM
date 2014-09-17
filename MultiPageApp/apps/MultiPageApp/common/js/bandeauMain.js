@@ -11,34 +11,14 @@
 
  */
 
-/* Fichier de script de la page "index.html" */
+currentPage = {};
 
+currentPage.init = function(){
+	WL.Logger.debug("MainPage :: init");
+};
 
-var pagesHistory = [];
-var currentPage = {};
-var path = "";
-
-function wlCommonInit(){
-	
-	// Special case for Windows Phone 8 only.
-	if (WL.Client.getEnvironment() == WL.Environment.WINDOWS_PHONE_8) {
-	    path = "/www/default/";
-	}
-	
-	$("#bandeau").load(path + "pages/bandeauMain.html", function(){
-		$.getScript(path + "js/bandeauMain.js", function() {
-			if (currentPage.init) {
-				currentPage.init();
-			}
-		});
-	});
-	
-	
-	$("#pagePort").load(path + "pages/MainPage.html", function(){
-		$.getScript(path + "js/MainPage.js", function() {
-			if (currentPage.init) {
-				currentPage.init();
-			}
-		});
-	});
-}
+currentPage.loadPage = function(directory){
+	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + directory);
+	pagesHistory.push(path + "pages/bandeauMain.html");
+	$("#bandeau").load(path + "pages/" + directory + ".html");
+};
