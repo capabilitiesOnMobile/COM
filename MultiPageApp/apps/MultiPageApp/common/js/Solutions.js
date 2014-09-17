@@ -19,7 +19,7 @@ currentPage.init = function() {
 
 currentPage.buttonClick = function() {
 	WL.Logger.debug("Solutions :: buttonClick");
-	WL.SimpleDialog.show("Solutions","Button on Solutions was clicked",[{text:'OK'}]);
+	WL.SimpleDialog.show("Solutions","My contact information",[{text:'OK'}]);
 };
 
 currentPage.back = function(){
