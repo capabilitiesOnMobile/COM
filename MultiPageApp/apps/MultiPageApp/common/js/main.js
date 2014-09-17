@@ -25,6 +25,15 @@ function wlCommonInit(){
 	    path = "/www/default/";
 	}
 	
+	$("#bandeau").load(path + "pages/bandeauMain.html", function(){
+		$.getScript(path + "js/bandeauMain.js", function() {
+			if (currentPage.init) {
+				currentPage.init();
+			}
+		});
+	});
+	
+	
 	$("#pagePort").load(path + "pages/MainPage.html", function(){
 		$.getScript(path + "js/MainPage.js", function() {
 			if (currentPage.init) {

@@ -22,3 +22,15 @@ currentPage.loadPage = function(directory){
 	pagesHistory.push(path + "pages/MainPage.html");
 	$("#pagePort").load(path + "pages/" + directory + ".html");
 };
+
+
+currentPage.load = function(previousDirectory, NewFile,script){
+	WL.Logger.debug("Industry :: loadPage :: pageIndex: " + previousDirectory);
+	pagesHistory.push(path + "pages/" + previousDirectory + ".html");
+	$("#pagePort").load(path + "pages/" + previousDirectory + '/' + NewFile + ".html");
+	$.getScript(path +"/js"+ script +".js", function() {
+		if (currentPage.init) {
+			currentPage.init();
+		}
+	});
+};
