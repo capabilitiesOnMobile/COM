@@ -277,26 +277,9 @@ td /* Paramètres des colonnes de la page d'affichage d'une solution particuliè
 	width: 30%;
 	padding: 20px;
 	text-align: center;
-	background-color: Silver;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
+	background: silver;
 	margin-left: 25px;
 	margin-right: 25px;
-}
-
-.colonneSolutions2 {
-	font-family: arial;
-	width: 70%;
-	padding: 20px;
-	text-align: center;
-	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
-	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
-	background: -o-radial-gradient(center, circle, Black, GhostWhite);
-	background: radial-gradient(center, circle, Black, GhostWhite);
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
 /* Paramètres d'affichage des cases de la page d'accueil */
@@ -305,61 +288,6 @@ td /* Paramètres des colonnes de la page d'affichage d'une solution particuliè
 	width: 400px;
 	padding: 5px;
 	text-align: left;
-/*	color: rgb(130,140,149); /* Old browsers */
-/*	color: -moz-linear-gradient(left,  rgba(130,140,149,1) 36%, rgba(40,52,59,1) 96%, rgba(40,52,59,1) 100%, rgba(181,189,200,1) 100%); /* FF3.6+ */
-/*	color: -webkit-gradient(linear, left top, right top, color-stop(36%,rgba(130,140,149,1)), color-stop(96%,rgba(40,52,59,1)), color-stop(100%,rgba(40,52,59,1)), color-stop(100%,rgba(181,189,200,1))); /* Chrome,Safari4+ */
-/*	color: -webkit-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* Chrome10+,Safari5.1+ */
-/*	color: -o-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* Opera 11.10+ */
-/*	color: -ms-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* IE10+ */
-/*	color: linear-gradient(to right,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* W3C */
-/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 */
-}
-
-.gradient {
-	/* fallback color */
-	background-color: GhostWhite;
-	/* fallback image */
-	background-image: url(images/gradient.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	/* Firefox 3.6+ */
-	background: -moz-radial-gradient(circle, Silver, GostWhite);
-	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(radial, center center, 0, center center, 200, from(Silver
-		), to(GostWhite));
-	/* Safari 5.1+, Chrome 10+ */
-	background: -webkit-radial-gradient(circle, Silver, GostWhite);
-	height: 200px;
-	width: 200px;
-	padding: 25px;
-	margin-left: 25px;
-}
-
-
-.gradient_new {
-	/* Old browsers */
-	background: rgb(206, 220, 231);
-	/* FF3.6+ */
-	background: -moz-linear-gradient(left, rgba(206, 220, 231, 1) 0%,
-		rgba(89, 106, 114, 1) 100%);
-	/* Chrome,Safari4+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(206,
-		220, 231, 1)), color-stop(100%, rgba(89, 106, 114, 1)));
-	/* Chrome10+,Safari5.1+ */
-	background: -webkit-linear-gradient(left, rgba(206, 220, 231, 1) 0%,
-		rgba(89, 106, 114, 1) 100%);
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(left, rgba(206, 220, 231, 1) 0%,
-		rgba(89, 106, 114, 1) 100%);
-	/* IE10+ */
-	background: -ms-linear-gradient(left, rgba(206, 220, 231, 1) 0%,
-		rgba(89, 106, 114, 1) 100%);
-	/* W3C */
-	background: linear-gradient(to right, rgba(206, 220, 231, 1) 0%,
-		rgba(89, 106, 114, 1) 100%);
-	/* IE6-9 */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
-		endColorstr='#596a72', GradientType=1);
 }
 
 /* Paramètres d'affichage des colonnes du template des Industries*/
@@ -368,11 +296,6 @@ td /* Paramètres des colonnes de la page d'affichage d'une solution particuliè
 	width: 80%;
 	padding: 80px;
 	text-align: center;
-	/*background-color: Silver;*/
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
 	margin-left: 25px;
 	margin-right: 25px;
 }
@@ -382,10 +305,6 @@ td /* Paramètres des colonnes de la page d'affichage d'une solution particuliè
 	width: 20%;
 	padding: 80px;
 	text-align: center;
-	background: -webkit-radial-gradient(center, circle, Black, GhostWhite);
-	background: -moz-radial-gradien(center, circle, Black, GhostWhite);
-	background: -o-radial-gradient(center, circle, Black, GhostWhite);
-	background: radial-gradient(center, circle, Black, GhostWhite);
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -401,10 +320,7 @@ tr /*Paramètres d'affichage des colonnes de la page d'affichage d'une solution 
 	height: 25%;
 	padding: 20px;
 	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
+	background: silver;
 	margin-left: 25px;
 	margin-right: 25px;
 }
@@ -414,23 +330,7 @@ tr /*Paramètres d'affichage des colonnes de la page d'affichage d'une solution 
 	height: 25%;
 	padding: 20px;
 	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 25px;
-	margin-right: 25px;
-}
-
-.ligneSolutions3 {
-	font-family: arial;
-	height: 25%;
-	padding: 20px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
+	background: silver;
 	margin-left: 25px;
 	margin-right: 25px;
 }
@@ -441,10 +341,7 @@ tr /*Paramètres d'affichage des colonnes de la page d'affichage d'une solution 
 	height: 20%;
 	padding: 15px;
 	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
+	background: silver;
 	margin-left: 25px;
 	margin-right: 25px;
 }
@@ -454,23 +351,7 @@ tr /*Paramètres d'affichage des colonnes de la page d'affichage d'une solution 
 	height: 20%;
 	padding: 15px;
 	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
-	margin-left: 25px;
-	margin-right: 25px;
-}
-
-.ligneIndustries3 {
-	font-family: arial;
-	height: 40px;
-	padding: 20px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(center, Black 0%, White 100%);
-	background-image: -moz-radial-gradien(center, Black 0%, White 100%);
-	background-image: -o-radial-gradient(center, Black 0%, White 100%);
-	background-image: radial-gradient(center, Black 0%, White 100%));
+	background: silver;
 	margin-left: 25px;
 	margin-right: 25px;
 }
@@ -567,6 +448,12 @@ tr /*Paramètres d'affichage des colonnes de la page d'affichage d'une solution 
 	}
 }
 
+img.thumbnail {
+	width: 45px;
+	height: 45px;
+	vertical-align: middle;
+}
+
 /* ===============================
  * [Object] Buttons
  * =============================== */
@@ -576,17 +463,10 @@ body {
 	text-align: center;
 }
 
-img.thumbnail {
-	width: 45px;
-	height: 45px;
-	vertical-align: middle;
-}
-
 .logoIBM {
 	height : 200px;
 	width : 280px;
 }
-
 
 .buttonMainPage {
 	width: 95%;
