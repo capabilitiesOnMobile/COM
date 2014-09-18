@@ -17,15 +17,36 @@ currentPage.init = function(){
 	WL.Logger.debug("MainPage :: init");
 };
 
-currentPage.loadPage = function(directory){
+currentPage.loadPage = function(directory,script){
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + directory);
 	pagesHistory.push(path + "pages/MainPage.html");
 	$("#pagePort").load(path + "pages/" + directory + ".html");
+	$.getScript(path + "js/" + script + ".js");/*, function() {
+		if (currentPage.init) {
+			currentPage.init();
+		}
+	});*/
 };
 
 
-currentPage.load = function(previousDirectory, NewFile,script){
-	WL.Logger.debug("Industry :: loadPage :: pageIndex: " + previousDirectory);
-	pagesHistory.push(path + "pages/" + previousDirectory + ".html");
-	$("#pagePort").load(path + "pages/" + previousDirectory + '/' + NewFile + ".html");
+currentPage.loadPagePort = function(previousFileDirectory, NewFileDirectory,script){
+	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + NewFileDirectory);
+	pagesHistory.push(path + "pages/" + previousFileDirectory + ".html");
+	$("#pagePort").load(path + "pages/" + NewFileDirectory + ".html");
+	$.getScript(path + "js/" + script + ".js");/*, function() {
+	if (currentPage.init) {
+	currentPage.init();
+}
+});*/
+};
+
+currentPage.loadBandeau = function(previousFileDirectory, NewFileDirectory,script){
+	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + previousFileDirectory);
+	pagesHistory.push(path + "pages/" + previousFileDirectory + ".html");
+	$("#bandeau").load(path + "pages/" + NewFileDirectory + ".html");
+	$.getScript(path + "js/" + script + ".js");/*, function() {
+			if (currentPage.init) {
+			currentPage.init();
+		}
+		});*/
 };

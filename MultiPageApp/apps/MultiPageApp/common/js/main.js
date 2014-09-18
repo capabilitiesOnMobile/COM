@@ -43,7 +43,7 @@ function wlCommonInit(){
 	});
 	
 	$("#logo").load(path + "pages/Logo.html", function(){
-		$.getScript(path + "js/logo.js", function() {
+		$.getScript(path + "js/Logo.js", function() {
 			if (currentPage.init) {
 				currentPage.init();
 			}

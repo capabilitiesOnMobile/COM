@@ -41,7 +41,7 @@ currentPage.loadSolution = function(previousDirectory, NewFile){
 	WL.Logger.debug("Industry :: loadPage :: pageIndex: " + previousDirectory);
 	pagesHistory.push(path + "pages/" + previousDirectory + ".html");
 	$("#pagePort").load(path + "pages/" + previousDirectory + '/' + NewFile + ".html");
-	$.getScript(path + "/Solutions.js", function() {
+	$.getScript(path + "js/Solutions.js", function() {
 		if (currentPage.init) {
 			currentPage.init();
 		}
