@@ -13,39 +13,52 @@
   
  -->
 
+<!--
+	Ce fichier va servir de support pour afficher les autres pages dans un tableau.
+	Il contient un tableau dans lequel il y a des conteneurs qui appelent d'autres pages html
+-->
 
-<!--  Ce fichier est générique. Seul le titre est à modifier. -->
 <html>
 <head>
 <meta charset="UTF-8">
 <title>IBM Business Solution Center</title>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-	<!--
-    	<link rel="shortcut icon" href="images/favicon.png">
-    	<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
-   	-->
 
+<!--  Appel de la feuille de style -->
 <link rel="stylesheet" href="css/main.css">
+
+
+<!-- Appel de jQery -->
 <script>
 	window.$ = window.jQuery = WLJQ;
 </script>
 </head>
 <body style="display: none;">
 
-	<!-- Le wrapper c'est un peu comme l'amballage global de l'app dans lequel on fait un tableau  -->
+	<!-- Le wrapper est l'emballage global de l'application dans lequel on fait un tableau qui appelle d'autres pages -->
 	<div id="wrapper">
 		<table>
+		<!-- Chaque case contient un conteneur qui appelle une page html à l'aide d'une fonction javascript -->	
+			<!-- ligne 1 -->
 			<tr>
+				<!-- Colonne 1 -->
 				<td class="caseBandeau"><div class="static" id="bandeau"></div></td>
+				<!-- Colonne 2 -->
 				<td class="caseBack"><div class="static" id="back"></div></td>
 			</tr>
+			<!-- ligne 2 -->
 			<tr>
+				<!-- Colonne 1 -->
 				<td class="casePagePort"><div class="static" id="pagePort"></div></td>
+				<!-- Colonne 2 -->
 				<td class="caseLogo"><div class="static" id="logo"></div></td>
 			</tr>
+			<!-- ligne 3, Ici le code est "en dur", c'est à dire que l'affichage resterale même (et d'ailleur vide), tout le temps -->
 			<tr>
+				<!-- Colonne 1 -->
 				<td class="caseBandeau"></td>
+				<!-- Colonne 2 -->
 				<td class="caseBack"></td>
 			</tr>
 		</table>

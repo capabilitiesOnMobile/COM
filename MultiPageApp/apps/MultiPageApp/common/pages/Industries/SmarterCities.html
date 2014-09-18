@@ -1,19 +1,27 @@
+<!-- SmarterCities.html -->
+
 <!-- Get script Industries.js -->
 <script>
 	$.getScript(path + "js/Industries.js");
 </script>
 
-<table summary="exemple de structure d'un tableau de donnees 2 lignes, 2 colonnes">
-
+<table summary="Structure d'un tableau de donnees 2 lignes, 2 colonnes pour l'affichage des solutions">
+	<!-- ligne 1 -->
 	<tr class="ligneIndustries1">
+		<!-- Colonne 1 -->
 		<td class="colonneIndustries1"><input type="button"
 			class="appButton" value="Smart Water Integration Reduced Leakage"
 			onclick="currentPage.loadSolution('Industries/SmarterCities','SmartWaterIntegrationForReducedLeakage');" /></td>
+		<!-- Colonne 2 -->
 		<td class="colonneIndustries2"><input type="button"
 			class="appButton" value="Video" id="VideoEU1"></td>
 	</tr>
-
+	<!-- ligne 2 -->
 	<tr class="ligneIndustries2">
+		<!-- Colonne 1 -->
+		<td class="colonneIndustries1"><h2 class="solutionTitle">
+			Unit Commitment Optimization : Renewable Energies (UCO RE)</h2></td>
+		<!-- Colonne 2 -->
 		<td class="colonneIndustries1">
 			<h2 class="solutionTitle">
 				Unit Commitment Optimization : Renewable Energies (UCO RE)
@@ -21,8 +29,6 @@
 			<input type="button"
 				class="appButton" value="Back" onclick="currentPage.back();"/>
 		</td>
-		<td class="colonneIndustries2"><input type="button"
-			class="appButton" value="Video" id="VideoEU2" /></td>
 	</tr>
 
 </table>
