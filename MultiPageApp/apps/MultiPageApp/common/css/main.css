@@ -526,6 +526,12 @@ img.thumbnail {
 	vertical-align: middle;
 }
 
+.logoIBM {
+	height : 200px;
+	width : 280px;
+}
+
+
 .buttonMainPage {
 	width: 95%;
 	cursor: pointer;
