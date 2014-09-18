@@ -6,16 +6,17 @@ industriesPage.init = function() {
 	WL.Logger.debug("Industry :: init");
 };
 
-industriesPage.loadSolution = function(previousDirectory, NewFile){
-	WL.Logger.debug("Industry :: loadPage :: pageIndex: " + previousDirectory);
+industriesPage.loadPage = function(previousDirectory, newDirectory, script) {
+	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + newDirectory);
+	
 	historyBandeau.push(path + "pages/" + previousDirectory + "Bandeau.html");
 	historyPagePort.push(path + "pages/" + previousDirectory + ".html");
-	$("#pagePort").load(path + "pages/" + previousDirectory + '/' + NewFile + ".html");
-	$.getScript(path + "js/Solutions.js", function() {
-		if (currentPage.init) {
-			currentPage.init();
-		}
-	});
+	historyLogo.push(path + "pages/" + "Logo" + ".html");
+	
+	$("#bandeau").load(path + "pages/" + newDirectory + "Bandeau.html");
+	$("#pagePort").load(path + "pages/" + newDirectory + ".html");
+	$("#logo").load(path + "pages/" + newDirectory + "Logo.html");
+	$.getScript(path + "js/" + script + ".js");
 };
 
 industriesPage.back = function() {
@@ -29,6 +30,18 @@ industriesPage.back = function() {
 industriesPage.buttonClick = function() {
 	WL.Logger.debug("Industry :: buttonClick");
 	WL.SimpleDialog.show("Industry","Button on Industry was clicked",[{text:'OK'}]);
+};
+
+industriesPage.loadSolution = function(previousDirectory, NewFile){
+	WL.Logger.debug("Industry :: loadPage :: pageIndex: " + previousDirectory);
+	historyBandeau.push(path + "pages/" + previousDirectory + "Bandeau.html");
+	historyPagePort.push(path + "pages/" + previousDirectory + ".html");
+	$("#pagePort").load(path + "pages/" + previousDirectory + '/' + NewFile + ".html");
+	$.getScript(path + "js/Solutions.js", function() {
+		if (currentPage.init) {
+			currentPage.init();
+		}
+	});
 };
 
 industriesPage.loadMainPage = function(){

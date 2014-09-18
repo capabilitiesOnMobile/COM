@@ -15,6 +15,6 @@ mainPage.loadPage = function(previousDirectory, newDirectory, script) {
 	
 	$("#bandeau").load(path + "pages/" + newDirectory + "Bandeau.html");
 	$("#pagePort").load(path + "pages/" + newDirectory + ".html");
-	$("#logo").load(path + "pages/" + "Logo" + ".html");
+	$("#logo").load(path + "pages/" + "Logo.html");
 	$.getScript(path + "js/" + script + ".js");
 };
