@@ -71,6 +71,12 @@ input /* Paramètres d'affichage d'un imput type boutton */
 	margin: 3px auto;
 }
 
+div
+
+.static {
+  position: static;
+}
+
 /* Paramètres du texte normal */
 p {
 	padding: 10px;
