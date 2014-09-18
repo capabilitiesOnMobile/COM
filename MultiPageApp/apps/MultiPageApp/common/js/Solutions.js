@@ -1,18 +1,19 @@
 /* Script Solutions.js */
 
-currentPage={};
+solutionsPage = {};
 
-currentPage.init = function() {
+solutionsPage.init = function() {
 	WL.Logger.debug("Solutions :: init");
 };
 
-currentPage.buttonClick = function() {
+solutionsPage.buttonClick = function() {
 	WL.Logger.debug("Solutions :: buttonClick");
 	WL.SimpleDialog.show("Solutions","My contact information",[{text:'OK'}]);
 };
 
-currentPage.back = function(){
+solutionsPage.back = function() {
 	WL.Logger.debug("Solutions :: back");
 	$("#pagePort").load(historyPagePort.pop());
 	$("#bandeau").load(historyBandeau.pop());
+	$("#logo").load(historyLogo.pop());
 };
