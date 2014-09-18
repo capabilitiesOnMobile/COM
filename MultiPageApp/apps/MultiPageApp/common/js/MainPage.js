@@ -39,7 +39,7 @@ currentPage.loadPagePort = function(previousFileDirectory, NewFileDirectory,scri
 }
 });*/
 };
-/*
+
 currentPage.loadBandeau = function(previousFileDirectory, NewFileDirectory,script){
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + previousFileDirectory);
 	pagesHistory.push(path + "pages/" + previousFileDirectory + ".html");
@@ -48,5 +48,5 @@ currentPage.loadBandeau = function(previousFileDirectory, NewFileDirectory,scrip
 			if (currentPage.init) {
 			currentPage.init();
 		}
-		});
-};*/
+		});*/
+};
