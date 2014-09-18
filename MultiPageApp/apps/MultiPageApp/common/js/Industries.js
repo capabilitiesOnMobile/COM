@@ -1,32 +1,12 @@
 /* Script Industries.js */
 
-currentPage={};
+industriesPage = {};
 
-currentPage.init = function() {
+industriesPage.init = function() {
 	WL.Logger.debug("Industry :: init");
 };
 
-currentPage.buttonClick = function() {
-	WL.Logger.debug("Industry :: buttonClick");
-	WL.SimpleDialog.show("Industry","Button on Industry was clicked",[{text:'OK'}]);
-};
-
-
-currentPage.loadMainPage = function(){
-	WL.Logger.debug("Industry :: loadMainPage");
-	pagesHistory.push(path + "pages/Industries/SmarterCities.html");
-	$("#pagePort").load(path + "pages/MainPage.html", function(){
-		$.getScript(path + "js/MainPage.js", function() {
-			if (currentPage.init) {
-				currentPage.init();
-			}
-		});
-	});
-};
-
-
-
-currentPage.loadSolution = function(previousDirectory, NewFile){
+industriesPage.loadSolution = function(previousDirectory, NewFile){
 	WL.Logger.debug("Industry :: loadPage :: pageIndex: " + previousDirectory);
 	historyBandeau.push(path + "pages/" + previousDirectory + "Bandeau.html");
 	historyPagePort.push(path + "pages/" + previousDirectory + ".html");
@@ -38,8 +18,32 @@ currentPage.loadSolution = function(previousDirectory, NewFile){
 	});
 };
 
+industriesPage.back = function() {
+	WL.Logger.debug("Industry :: back");
+	$("#pagePort").load(historyPagePort.pop());
+	$("#bandeau").load(historyBandeau.pop());
+	$("#logo").load(historyLogo.pop());
+};
+
 /*
-currentPage.loadSWIRL = function(){
+industriesPage.buttonClick = function() {
+	WL.Logger.debug("Industry :: buttonClick");
+	WL.SimpleDialog.show("Industry","Button on Industry was clicked",[{text:'OK'}]);
+};
+
+industriesPage.loadMainPage = function(){
+	WL.Logger.debug("Industry :: loadMainPage");
+	pagesHistory.push(path + "pages/Industries/SmarterCities.html");
+	$("#pagePort").load(path + "pages/MainPage.html", function(){
+		$.getScript(path + "js/MainPage.js", function() {
+			if (currentPage.init) {
+				currentPage.init();
+			}
+		});
+	});
+};
+
+industriesPage.loadSWIRL = function(){
 	WL.Logger.debug("Industry :: loadSWIRL");
 	pagesHistory.push(path + "pages/Industries/Industry.html");
 	$("#pagePort").load(path + "pages/Industries/Industry/SWIRL.html", function(){
@@ -50,15 +54,10 @@ currentPage.loadSWIRL = function(){
 		});
 	});
 };
-*/
-currentPage.insertFragment = function() {
+
+industriesPage.insertFragment = function() {
 	WL.Logger.debug("Industry :: insertFragment");
 	$("#FragmentsDiv").load(path + "pages/fragment.html");
 };
 
-currentPage.back = function(){
-	WL.Logger.debug("Industry :: back");
-	$("#pagePort").load(historyPagePort.pop());
-	$("#bandeau").load(historyBandeau.pop());
-};
-
+*/
