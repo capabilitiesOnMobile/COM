@@ -1,17 +1,4 @@
-/* Affichage bandeau supérieur */
-/*
-#header {
-	text-align: center;
-	background-color: #1D4D90;
-	color: #F9FAFB;
-	font-size: px;
-	height: 70px;
-	line-height: 20px;
-	border-bottom: 1px solid white;
-	position: fixed;
-	width: 100%;
-}*/
-
+/* Structure de l'interface */
 #wrapper {
 	background-color : #121417;
 	/*background-color: #181818;*/
@@ -58,10 +45,9 @@
 }
 
 #pagePort {
-	/*background-color: transparent;*/
 	background-color: #181818;
 	width: 900px;
-	height: 500px;
+	height: 400px;
 	overflow: auto;
 	font-family: arial;
 	text-align: center;
@@ -73,7 +59,7 @@
 #logo {
 	background-color: #181818;
 	width: 340px;
-	height: 500px;
+	height: 400px;
 	overflow: auto;
 	font-family: arial;
 	text-align: center;
@@ -118,10 +104,6 @@
 	margin-right: 0px;
 }
 
-div.static {
-	position: static;
-}
-
 /* Paramètres du texte normal */
 p {
 	padding: 10px;
@@ -141,7 +123,7 @@ body {
 h1 {
 	font-size: 200%;
 	color: white;
-	text-align: Center;
+	text-align: center;
 }
 
 h2 {
@@ -150,11 +132,19 @@ h2 {
 	text-align: align-left;
 }
 
+.bandeau {
+	padding-left: 1%;
+}
+
 .solutionTitle {
 	font-size: 100%;
 	color: blue;
-	padding-left: 15px;
+	padding-left: 0px;
 	text-align: Center;
+}
+
+div.static {
+	position: static;
 }
 
 p, ul, li, td {
@@ -188,38 +178,30 @@ table {
 	height: 100%;
 }
 
-td /* Paramètres des colonnes de la page d'affichage d'une solution particulière */
+td
 
 .mainPageCell {
 	font-family: arial;
-	width: 400px;
-	padding: 5px;
-	text-align: left;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
 }
 
 .industriesCell {
 	font-family: arial;
-	width: 400px;
-	padding: 5px;
+	width: 100%;
+	padding: 0px;
 	text-align: center;
-	background: #181818;
 }
 
 .solutionsCell {
 	font-family: arial;
-	width: 30%;
-	padding: 5px;
+	width: 100%;
+	padding: 0px;
 	text-align: center;
-	background: #181818;
-	margin-left: 25px;
-	margin-right: 25px;
 }
 
 .solutionsCellLogo {
-	font-family: arial;
-	width: 30%;
-	padding: 5px;
-	text-align: center;
 	background: rgb(130,140,149); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(130,140,149,1) 36%, rgba(40,52,59,1) 96%, rgba(40,52,59,1) 100%, rgba(181,189,200,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(36%,rgba(130,140,149,1)), color-stop(96%,rgba(40,52,59,1)), color-stop(100%,rgba(40,52,59,1)), color-stop(100%,rgba(181,189,200,1))); /* Chrome,Safari4+ */
@@ -228,12 +210,20 @@ td /* Paramètres des colonnes de la page d'affichage d'une solution particuliè
 	background: -ms-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* IE10+ */
 	background: linear-gradient(to right,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 */
-	margin-left: 25px;
-	margin-right: 25px;
+	font-family: arial;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
 }
 
 caption {
 	font-family: sans-serif;
+}
+
+img.thumbnail {
+	width: 45px;
+	height: 45px;
+	vertical-align: middle;
 }
 
 /* ===============================
@@ -328,12 +318,6 @@ caption {
 	}
 }
 
-img.thumbnail {
-	width: 45px;
-	height: 45px;
-	vertical-align: middle;
-}
-
 /* ===============================
  * [Object] Buttons
  * =============================== */
@@ -349,7 +333,6 @@ body {
 }
 
 .buttonMainPage {
-	width: 95%;
 	cursor: pointer;
 	background: rgb(130,140,149); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(130,140,149,1) 36%, rgba(40,52,59,1) 96%, rgba(40,52,59,1) 100%, rgba(181,189,200,1) 100%); /* FF3.6+ */
@@ -359,9 +342,10 @@ body {
 	background: -ms-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* IE10+ */
 	background: linear-gradient(to right,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 */
+	width: 98%;
 	display: inline-block;
-	padding: 1.0em 1.0em;
-	border-radius: 3px;
+	padding: 0.2em 1%;
+	border-radius: 0px;
 	text-align: left;
 }
 
@@ -389,7 +373,6 @@ body {
 }
 
 .buttonIndustries {
-	width: 95%;
 	cursor: pointer;
 	background: rgb(130,140,149); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(130,140,149,1) 36%, rgba(40,52,59,1) 96%, rgba(40,52,59,1) 100%, rgba(181,189,200,1) 100%); /* FF3.6+ */
@@ -399,9 +382,10 @@ body {
 	background: -ms-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* IE10+ */
 	background: linear-gradient(to right,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 */
+	width: 98%;
 	display: inline-block;
-	padding: 2.5em 1.0em;
-	border-radius: 3px;
+	padding: 2.5em 1%;
+	border-radius: 0px;
 	text-align: left;
 }
 
