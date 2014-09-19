@@ -409,6 +409,13 @@ img.thumbnail {
 	vertical-align: middle;
 }
 
+
+.thumbnailBack {
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+}
+
 /* ===============================
  * [Object] Buttons
  * =============================== */
