@@ -1,12 +1,12 @@
 /* Script Industries.js */
 
-industriesPage = {};
+currentPage = {};
 
-industriesPage.init = function() {
+currentPage.init = function() {
 	WL.Logger.debug("Industry :: init");
 };
 
-industriesPage.loadPage = function(previousDirectory, newDirectory, script) {
+currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + newDirectory);
 	
 	historyBandeau.push(path + "pages/" + previousDirectory + "Bandeau.html");
@@ -19,7 +19,7 @@ industriesPage.loadPage = function(previousDirectory, newDirectory, script) {
 	$.getScript(path + "js/" + script + ".js");
 };
 
-industriesPage.back = function() {
+currentPage.back = function() {
 	WL.Logger.debug("Industry :: back");
 	$("#pagePort").load(historyPagePort.pop());
 	$("#bandeau").load(historyBandeau.pop());

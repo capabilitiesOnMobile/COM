@@ -5,30 +5,28 @@
 	$.getScript(path + "js/Industries.js");
 </script>
 
-<table summary="Structure d'un tableau de donnees 2 lignes, 2 colonnes pour l'affichage des solutions">
-	<!-- ligne 1 -->
-	<tr class="ligneIndustries1">
-		<!-- Colonne 1 -->
-		<td class="colonneIndustries1"><input type="button"
-			class="appButton" value="Smart Water Integration Reduced Leakage"
-			onclick="industriesPage.loadPage('Industries/SmarterCities','Industries/SmarterCities/SmartWaterIntegration','Solutions');" /></td>
-		<!-- Colonne 2 -->
-		<td class="colonneIndustries2"><input type="button"
-			class="appButton" value="Video" id="VideoEU1"></td>
-	</tr>
-	<!-- ligne 2 -->
-	<tr class="ligneIndustries2">
-		<!-- Colonne 1 -->
-		<td class="colonneIndustries1"><h2 class="solutionTitle">
-			Unit Commitment Optimization : Renewable Energies (UCO RE)</h2></td>
-		<!-- Colonne 2 -->
-		<td class="colonneIndustries1">
-			<h2 class="solutionTitle">
-				Unit Commitment
-			</h2>
-			<input type="button"
-				class="appButton" value="Back" onclick="industriesPage.back();"/>
-		</td>
-	</tr>
+<body>
+	<table summary="Structure d'un tableau de donnees 2 lignes, 2 colonnes pour l'affichage des solutions">
+		
+		<tr><td class="industriesCell"><h2 class="solutionTitle">
+			<label class="buttonIndustries" id="LoadButtonSmartWater"
+				onclick="currentPage.loadPage('Industries/SmarterCities','Industries/SmarterCities/SmartWaterIntegration','Solutions');">
+				Smart Water Integration Reduced Leakage
+			</label>
+		</h2></td></tr>
+		
+		<tr><td class="industriesCell"><h2 class="solutionTitle">
+			<label class="buttonIndustries" id="LoadButtonBack">
+				Unit Commitment Optimization : Renewable Energies (UCO RE)
+			</label>
+		</h2></td></tr>
+		
+		<tr><td class="industriesCell"><h2 class="solutionTitle">
+			<label class="buttonIndustries" id="LoadButtonUnitCommitment"
+				onclick="currentPage.back();">
+				Back
+			</label>
+		</h2></td></tr>
 
-</table>
+	</table>
+</body>

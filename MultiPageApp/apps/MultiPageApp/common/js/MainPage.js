@@ -1,12 +1,12 @@
 /* Script MainPage.js */
 
-mainPage = {};
+currentPage = {};
 
-mainPage.init = function(){
+currentPage.init = function(){
 	WL.Logger.debug("MainPage :: init");
 };
 
-mainPage.loadPage = function(previousDirectory, newDirectory, script) {
+currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + newDirectory);
 	
 	historyBandeau.push(path + "pages/" + previousDirectory + "Bandeau.html");
