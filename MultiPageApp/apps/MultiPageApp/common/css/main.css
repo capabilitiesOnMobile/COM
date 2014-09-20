@@ -6,7 +6,7 @@
 	margin: 0px;
 	padding: 0px;
 }
-
+/*Structure du bandeau supérieur gauche avec dégradé*/
 #bandeau {
 	background: rgb(6,6,63); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(6,6,63,1) 0%, rgba(6,6,63,1) 60%, rgba(25,44,127,1) 96%, rgba(17,30,89,1) 100%); /* FF3.6+ */
@@ -25,6 +25,7 @@
 	margin-right: 0px;
 }
 
+/*Structure du bandeau supérieur droit (où on héberge le bouton "Back" avec dégradé*/
 #back {
 	background: rgb(12,12,127); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(12,12,127,1) 0%, rgba(12,12,127,1) 60%, rgba(35,64,178,1) 96%, rgba(30,55,153,1) 100%); /* FF3.6+ */
@@ -43,11 +44,12 @@
 	margin-right: 0px;
 }
 
+/*Structure de la page principale*/
 #pagePort {
-	background-color: #181818;
+	background-color: #121417;
 	width: 900px;
-	height: 400px;
-	overflow: auto;
+	height: 500px;
+	/*overflow: auto;*/
 	font-family: arial;
 	text-align: center;
 	padding: 0px;
@@ -55,10 +57,12 @@
 	margin-right: 0px;
 }
 
+
+/*Structure de la case qui héberge le logo IBM et le texte des solutions*/
 #logo {
-	background-color: #181818;
+	background-color: #121417;
 	width: 340px;
-	height: 400px;
+	height: 500px;
 	overflow: auto;
 	font-family: arial;
 	text-align: center;
@@ -67,6 +71,7 @@
 	margin-right: 0px;
 }
 
+/*Structure du bandeau inférieur gauche avec dégradé*/
 #videGauche {
 	background: rgb(17,30,89); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(17,30,89,1) 0%, rgba(25,44,127,1) 4%, rgba(6,6,63,1) 40%, rgba(6,6,63,1) 100%); /* FF3.6+ */
@@ -77,14 +82,15 @@
 	background: linear-gradient(to bottom,  rgba(17,30,89,1) 0%,rgba(25,44,127,1) 4%,rgba(6,6,63,1) 40%,rgba(6,6,63,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111e59', endColorstr='#06063f',GradientType=0 ); /* IE6-9 */
 	width: 900px;
-	height: 150px;
+	height: 50px;
 	font-family: arial;
 	text-align: center;
 	padding: 0px;
-	margin-left: 0px;
+	margin-left: 0px;BlaBlaBla
 	margin-right: 0px;
 }
 
+/*Structure du bandeau inférieur droit avec dégradé*/
 #videDroite {
 	background: rgb(30,55,153); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(30,55,153,1) 0%, rgba(35,64,178,1) 4%, rgba(12,12,127,1) 40%, rgba(12,12,127,1) 100%); /* FF3.6+ */
@@ -95,7 +101,7 @@
 	background: linear-gradient(to bottom,  rgba(30,55,153,1) 0%,rgba(35,64,178,1) 4%,rgba(12,12,127,1) 40%,rgba(12,12,127,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3799', endColorstr='#0c0c7f',GradientType=0 ); /* IE6-9 */
 	width: 340px;
-	height: 150px;
+	height: 50px;
 	font-family: arial;
 	text-align: center;
 	padding: 0px;
@@ -108,33 +114,40 @@ p {
 	padding: 10px;
 }
 
+/*Structure commun html et body, avec marges nulles*/
 html, body {
 	margin: 0;
 	padding: 0;
 }
 
+
+/*Structure particulière de body avec le fond et la police*/
 body {
-	background-color: #181818; /*DarkGrey*/
+	background-color: #121417; /*DarkGrey*/
 	font-family: Arial, sans-serif;
 	font-size: 100%;
 }
 
+/*structure du titre h1*/
 h1 {
 	font-size: 200%;
 	color: white;
 	text-align: center;
 }
 
+/*structure du titre h2*/
 h2 {
 	font-size: 100%;
 	color: white;
 	text-align: align-left;
 }
 
+/*structure de la police h2 à l'intérieur du bandeau*/
 .bandeau {
 	padding-left: 1%;
 }
 
+/*structure de la police h2 des titres des solutions dans les pages industries*/
 .solutionTitle {
 	font-size: 100%;
 	color: blue;
@@ -152,7 +165,7 @@ p, ul, li, td {
 	margin-left: 15px;
 	margin-right: 15px;
 }
-
+/* a : paramètres des labels */
 a:link {
 	color: green;
 	text-decoration: underline;
@@ -171,12 +184,14 @@ a:active, a:focus {
 	color: red;
 }
 
+/*Pour que le tableau prenne toute la taille des conteneurs*/
 table {
 	border-collapse;
 	width: 100%;
 	height: 100%;
 }
 
+/* Paramètres des cases des tableaux (voir les noms des classes pour comprendre) */
 td
 
 .mainPageCell {
@@ -227,6 +242,7 @@ img.thumbnail {
 
 /* ===============================
  * [Object] Modal
+ * Sert à afficher les pop-ups de contact et more information
  * =============================== */
 .modal {
 	opacity: 0;
@@ -319,6 +335,7 @@ img.thumbnail {
 
 /* ===============================
  * [Object] Buttons
+ * Décrit tous les boutons de l'application
  * =============================== */
 body {
 	padding: 1%;
@@ -356,7 +373,7 @@ body {
 	background: -o-linear-gradient(left,  rgba(212,224,234,1) 0%,rgba(103,122,131,1) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  rgba(212,224,234,1) 0%,rgba(103,122,131,1) 100%); /* IE10+ */
 	background: linear-gradient(to right,  rgba(212,224,234,1) 0%,rgba(103,122,131,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e0ea', endColorstr='#677a83',GradientType=1 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( start * Sert surtout pour les lablel-boutonsColorstr='#d4e0ea', endColorstr='#677a83',GradientType=1 ); /* IE6-9 */
 }
 
 .buttonMainPage:active {
@@ -381,7 +398,7 @@ body {
 	background: -ms-linear-gradient(left,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* IE10+ */
 	background: linear-gradient(to right,  rgba(130,140,149,1) 36%,rgba(40,52,59,1) 96%,rgba(40,52,59,1) 100%,rgba(181,189,200,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 */
-	width: 98%;
+	width: 100%;
 	display: inline-block;
 	padding: 2.5em 1%;
 	border-radius: 0px;

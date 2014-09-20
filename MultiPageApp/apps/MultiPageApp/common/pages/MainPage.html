@@ -6,47 +6,60 @@
 </script>
 
 <body style="display: none;">
+
+	<!-- Tableau permettant d'afficher les industries. 
+	Seule l'industrie SmarterCities est fonctionnelle 
+	car C'est la seule pour laquelle des fichiers on été créés.
+	Une fois le design achevé et validé, il faudra duppliquer
+	les pages selon le schéma expliqué dans la documentation.
+	Rq : Des suggestions de noms de fichiers et les liens associés
+	ont été codés dans curentPage.loadPage() ci-dessous. Cad que si
+	vous changez de noms ou ne placez pas correctement les fichiers,
+	ça ne fonctionnera pas -->
 	<table>
+		<tr>
+			<td class="mainPageCell"><label class="buttonMainPage"
+				id="LoadButtonE&U"
+				onclick="currentPage.loadPage('Industries/Energy&Utilities');">
+					<img class="thumbnail" src="images/Logo-EnergyUtilities.png" alt="" />
+					Energy and Utilities
+			</label></td>
+		</tr>
 
-		<tr><td class="mainPageCell">
-			<label class="buttonMainPage" id="LoadButtonE&U"
-				onclick="currentPage.loadPage('Industries/E&U');">
-				<img class="thumbnail" src="images/Logo-EnergyUtilities.png" alt="" />
-				Energy and Utilities
-			</label>
-		</td></tr>
+		<tr>
+			<td class="mainPageCell"><label class="buttonMainPage"
+				id="LoadButtonTelecommunications"
+				onclick="currentPage.loadPage('Industries/Telecommunications');">
+					<img class="thumbnail" src="images/Logo-Telecommunications.png"
+					alt="" /> Telecommunications
+			</label></td>
+		</tr>
 
-		<tr><td class="mainPageCell">
-			<label class="buttonMainPage" id="LoadButtonTelecommunications"
-				onclick="currentPage.loadPage('Industries/Telecom');">
-				<img class="thumbnail" src="images/Logo-Telecommunications.png" alt="" />
-				Telecommunications
-			</label>
-		</td></tr>
-
-		<tr><td class="mainPageCell">
-			<label class="buttonMainPage" id="LoadButtonSmarterCities"
+		<tr>
+			<td class="mainPageCell"><label class="buttonMainPage"
+				id="LoadButtonSmarterCities"
 				onclick="currentPage.loadPage('MainPage','Industries/SmarterCities','Industries');">
-				<img class="thumbnail" src="images/Logo-SmarterCities.png" alt="" />
-				Smarter Cities
-			</label>
-		</td></tr>
+					<img class="thumbnail" src="images/Logo-SmarterCities.png" alt="" />
+					Smarter Cities
+			</label></td>
+		</tr>
 
-		<tr><td class="mainPageCell">
-			<label class="buttonMainPage" id="LoadButtonRetail"
-				onclick="currentPage.loadPage('Industries/Retail');">
-				<img class="thumbnail" src="images/Logo-Retail.png" alt="" />
-				Retail
-			</label>
-		</td></tr>
+		<tr>
+			<td class="mainPageCell"><label class="buttonMainPage"
+				id="LoadButtonRetail"
+				onclick="currentPage.loadPage('MainPage','Industries/Retail','Industries');"> <img
+					class="thumbnail" src="images/Logo-Retail.png" alt="" /> Retail
+			</label></td>
+		</tr>
 
-		<tr><td class="mainPageCell">
-			<label class="buttonMainPage" id="LoadButtonGovernment"
-				onclick="currentPage.loadPage('Industries/Government');">
-				<img class="thumbnail" src="images/Logo-Government.png" alt="" />
-				Government
-			</label>
-		</td></tr>
+		<tr>
+			<td class="mainPageCell"><label class="buttonMainPage"
+				id="LoadButtonGovernment"
+				onclick="currentPage.loadPage('MainPage','Industries/Government','Industries');"> <img
+					class="thumbnail" src="images/Logo-Government.png" alt="" />
+					Government
+			</label></td>
+		</tr>
 
 	</table>
 </body>

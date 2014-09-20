@@ -7,37 +7,54 @@
 
 <body style="display: none;">
 	<table>
+		<!-- Affichage de la video. 
+		Fonctionne sur navigateur, à tester sur un iPad
+Remplacer le lien src par le lien local
+ de la video et remplacer le fichier video
+  dans la mémoire par le bon -->
+		<tr>
+			<td class="solutionsCell"><video
+					src="pages/Industries/SmarterCities/small.mp4" width="500"
+					height="400" controls="controls"></video></td>
+		</tr>
 
-		<tr><td class="solutionsCell">
-			<video src="pages/Industries/SmarterCities/IBM_Water_Management_Center.mp4"
-				width="400" height="320" controls="controls"></video>
-		</td></tr>
-	
-		<tr><td class="solutionsCell">
-			<div>
-				<label class="button_green" for="modal-1">Contact point</label>
-				<label class="button_blue" for="modal-2">More Information</label>
-			</div>
+		<tr>
+			<td class="solutionsCell">
+				<div>
+					<label class="button_green" for="modal-1">Contact point</label> <label
+						class="button_blue" for="modal-2">More Information</label>
+				</div> <input class="modal-state" id="modal-1" type="checkbox" />
+				<div class="modal">
+					<label class="modal__bg" for="modal-1"></label>
+					<div class="modal__inner">
+						<label class="modal__close" for="modal-1"></label>
+						<!--  Bouton Contact : Texte à remplacer par photo et coordonées des owners des solutions -->
 
-			<input class="modal-state" id="modal-1" type="checkbox"/>
-			<div class="modal">
-				<label class="modal__bg" for="modal-1"></label>
-				<div class="modal__inner">
-					<label class="modal__close" for="modal-1"></label>
-					<h2>Jean-Michel Corrieu</h2>
-					<p><img src="http://www.telecom-valley.fr/sites/default/files/images/jm%20corrieu%20picture%201%20.jpg" alt="" />Le chef.</p>
+						<h2>Jean-Michel Corrieu</h2>
+						<p>
+							<img
+								src="http://www.telecom-valley.fr/sites/default/files/images/jm%20corrieu%20picture%201%20.jpg"
+								alt="" />Le chef. <br> A remplacer par photo et coordonées
+							des owners des solutions
+						</p>
+					</div>
+				</div> <input class="modal-state" id="modal-2" type="checkbox" />
+				<div class="modal">
+					<label class="modal__bg" for="modal-2"></label>
+					<div class="modal__inner">
+						<label class="modal__close" for="modal-2"></label>
+						<!--  Bouton "More information". Mettre
+							des fichiers collateraux ici : link iRam, OnePage, ppt, pdfs, etc
+							et s'assurer de leur bonne ouverture -->
+						<h2>More information</h2>
+						<p>
+							<img src="http://fontmeme.com/images/IBM-Logo.jpg" alt="" />Mettre
+							des fichiers collateraux ici : link iRam, OnePage, ppt, pdfs, etc
+							et s'assurer de leur bonne ouverture
+						</p>
+					</div>
 				</div>
-			</div>
-
-			<input class="modal-state" id="modal-2" type="checkbox" />
-			<div class="modal">
-				<label class="modal__bg" for="modal-2"></label>
-				<div class="modal__inner">
-					<label class="modal__close" for="modal-2"></label>
-					<h2>More information</h2>
-					<p><img src="http://fontmeme.com/images/IBM-Logo.jpg" alt="" />IBM.</p>
-				</div>
-			</div>
-		</td></tr>
+			</td>
+		</tr>
 	</table>
 </body>
