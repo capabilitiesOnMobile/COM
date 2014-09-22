@@ -159,6 +159,11 @@ div.static {
 	position: static;
 }
 
+div.scroll {
+	height: 80%;
+	overflow: auto;
+}
+
 p, ul, li, td {
 	color: black;
 	text-align: justify;
