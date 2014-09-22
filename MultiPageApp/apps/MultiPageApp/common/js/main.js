@@ -6,6 +6,7 @@ var historyLogo = [];
 var currentPage = {};
 var path = "";
 
+/* Chargement des fichiers .html */
 function wlCommonInit() {
 	
 	// Special case for Windows Phone 8 only.

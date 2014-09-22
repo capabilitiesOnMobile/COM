@@ -11,6 +11,8 @@ currentPage.buttonClick = function() {
 	WL.SimpleDialog.show("Solutions","My contact information",[{text:'OK'}]);
 };
 
+/* Chargement de la page précédente.
+ * Les trois cases de index.html ayant des contenus sont mises a jour. */
 currentPage.back = function() {
 	WL.Logger.debug("Solutions :: back");
 	$("#pagePort").load(historyPagePort.pop());

@@ -6,6 +6,8 @@ currentPage.init = function(){
 	WL.Logger.debug("MainPage :: init");
 };
 
+/* Chargement de la page suivante (selon le lien choisi).
+ * Les trois cases de index.html ayant des contenus sont mises a jour. */
 currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + newDirectory);
 	

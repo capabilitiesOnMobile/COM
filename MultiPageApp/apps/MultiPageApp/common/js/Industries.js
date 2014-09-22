@@ -6,6 +6,8 @@ currentPage.init = function() {
 	WL.Logger.debug("Industry :: init");
 };
 
+/* Chargement de la page suivante (selon le lien choisi).
+ * Les trois cases de index.html ayant des contenus sont mises a jour. */
 currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + newDirectory);
 	
@@ -19,6 +21,8 @@ currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	$.getScript(path + "js/" + script + ".js");
 };
 
+/* Chargement de la page précédente.
+ * Les trois cases de index.html ayant des contenus sont mises a jour. */
 currentPage.back = function() {
 	WL.Logger.debug("Industry :: back");
 	$("#pagePort").load(historyPagePort.pop());
