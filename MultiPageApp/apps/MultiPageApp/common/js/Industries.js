@@ -7,26 +7,29 @@ currentPage.init = function() {
 };
 
 /* Chargement de la page suivante (selon le lien choisi).
- * Les trois cases de index.html ayant des contenus sont mises a jour. */
+ * Les quatre cases de index.html ayant des contenus sont mises a jour. */
 currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	WL.Logger.debug("MainPage :: loadPage :: pageIndex: " + newDirectory);
 	
 	historyBandeau.push(path + "pages/" + previousDirectory + "Bandeau.html");
+	historyBack.push(path + "pages/Back.html");
 	historyPagePort.push(path + "pages/" + previousDirectory + ".html");
 	historyLogo.push(path + "pages/" + "Logo" + ".html");
 	
 	$("#bandeau").load(path + "pages/" + newDirectory + "Bandeau.html");
+	$("#back").load(path + "pages/Back.html");
 	$("#pagePort").load(path + "pages/" + newDirectory + ".html");
 	$("#logo").load(path + "pages/" + newDirectory + "Logo.html");
 	$.getScript(path + "js/" + script + ".js");
 };
 
 /* Chargement de la page précédente.
- * Les trois cases de index.html ayant des contenus sont mises a jour. */
+ * Les quatre cases de index.html ayant des contenus sont mises a jour. */
 currentPage.back = function() {
 	WL.Logger.debug("Industry :: back");
-	$("#pagePort").load(historyPagePort.pop());
 	$("#bandeau").load(historyBandeau.pop());
+	$("#back").load(historyBack.pop());
+	$("#pagePort").load(historyPagePort.pop());
 	$("#logo").load(historyLogo.pop());
 };
 

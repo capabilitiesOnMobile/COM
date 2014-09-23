@@ -1,6 +1,7 @@
 /* Script main.js */
 
 var historyBandeau = [];
+var historyBack = [];
 var historyPagePort = [];
 var historyLogo = [];
 var currentPage = {};
@@ -21,8 +22,7 @@ function wlCommonInit() {
 	});
 	
 	$("#bandeau").load(path + "pages/MainPageBandeau.html");
-	$("#back").load(path + "pages/Back.html");
+	$("#back").load(path + "pages/MainPageBack.html");
 	$("#pagePort").load(path + "pages/MainPage.html");
 	$("#logo").load(path + "pages/Logo.html");
-	
 }

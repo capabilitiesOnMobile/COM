@@ -12,10 +12,11 @@ currentPage.buttonClick = function() {
 };
 
 /* Chargement de la page précédente.
- * Les trois cases de index.html ayant des contenus sont mises a jour. */
+ * Les quatre cases de index.html ayant des contenus sont mises a jour. */
 currentPage.back = function() {
 	WL.Logger.debug("Solutions :: back");
-	$("#pagePort").load(historyPagePort.pop());
 	$("#bandeau").load(historyBandeau.pop());
+	$("#back").load(historyBack.pop());
+	$("#pagePort").load(historyPagePort.pop());
 	$("#logo").load(historyLogo.pop());
 };
