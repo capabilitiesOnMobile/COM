@@ -4,6 +4,7 @@ var historyBandeau = [];
 var historyBack = [];
 var historyPagePort = [];
 var historyLogo = [];
+var historyBack = [];
 var currentPage = {};
 var path = "";
 

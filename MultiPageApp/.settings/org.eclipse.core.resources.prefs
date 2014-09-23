@@ -1,15 +1,15 @@
-#Mon Sep 22 12:50:30 CEST 2014
-base.iphone=1019386945
-base.android=3825151067
-jsonstore.windowsphone8=1803770801
+#Tue Sep 23 17:17:38 CEST 2014
+base.iphone=2017367580
+base.android=2938669330
+jsonstore.windowsphone8=2618185927
 common.android=1795526790
 fipshttp.android=690177043
-wl_version=6.2.0.00.20140904-1709
+wl_version=6.2.0.00.20140918-1910
 encoding//apps/MultiPageApp/common/css/main.css=UTF-8
 encoding//apps/MultiPageApp/common/js/initOptions.js=UTF-8
 eclipse.preferences.version=1
 MultiPageApp.iphone.native=1403769466
-base.windowsphone8=1188172710
+base.windowsphone8=1436820627
 jsonstore.android=790094678
 analytics.ipad=3882346749
 MultiPageApp.ipad.native=1403769466
@@ -17,6 +17,6 @@ fipshttp.iphone=933660520
 MultiPageApp.android.native=4190508318
 encoding//apps/MultiPageApp/common/index.html=ISO-8859-1
 fipshttp.ipad=2537779042
-base.ipad=1019386945
+base.ipad=2017367580
 analytics.iphone=172702511
 analytics.android=2541125865
