@@ -15,6 +15,7 @@ currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	historyPagePort.push(path + "pages/" + previousDirectory + ".html");
 	historyLogo.push(path + "pages/" + "Logo" + ".html");
 	
+	$("#back").load(path + "pages/Back.html");
 	$("#bandeau").load(path + "pages/" + newDirectory + "Bandeau.html");
 	$("#pagePort").load(path + "pages/" + newDirectory + ".html");
 	$("#logo").load(path + "pages/" + "Logo.html");

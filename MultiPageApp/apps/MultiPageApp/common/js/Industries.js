@@ -21,10 +21,11 @@ currentPage.loadPage = function(previousDirectory, newDirectory, script) {
 	$.getScript(path + "js/" + script + ".js");
 };
 
-/* Chargement de la page prŽcŽdente.
+/* Chargement de la page prï¿½cï¿½dente.
  * Les trois cases de index.html ayant des contenus sont mises a jour. */
 currentPage.back = function() {
 	WL.Logger.debug("Industry :: back");
+	$("#back").unload(historyBack.pop());
 	$("#pagePort").load(historyPagePort.pop());
 	$("#bandeau").load(historyBandeau.pop());
 	$("#logo").load(historyLogo.pop());
