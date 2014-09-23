@@ -1,11 +1,12 @@
 /* Structure de l'interface */
 #wrapper {
 	background-color : #121417;
-	heigh: 100%;
-	width: 100%;
+	width: 1240px;
+	height: 700px;
 	margin: 0px;
 	padding: 0px;
 }
+
 /*Structure du bandeau supérieur gauche avec dégradé*/
 #bandeau {
 	background: rgb(6,6,63); /* Old browsers */
@@ -114,15 +115,17 @@ p {
 	padding: 10px;
 }
 
-/*Structure commun html et body, avec marges nulles*/
-html, body {
+/*Structure de html, avec marges nulles*/
+html {
 	margin: 0;
 	padding: 0;
 }
 
 
-/*Structure particulière de body avec le fond et la police*/
+/*Structure de body avec le fond et la police*/
 body {
+	margin: 0px;
+	padding: 0px;
 	background-color: #121417; /*DarkGrey*/
 	font-family: Arial, sans-serif;
 	font-size: 100%;

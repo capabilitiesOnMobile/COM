@@ -37,25 +37,23 @@
 <body style="display: none;">
 
 	<!-- Le wrapper est l'emballage global de l'application dans lequel on fait un tableau qui appelle d'autres pages -->
-	<div id="wrapper">
-		<table>
-		<!-- Chaque case contient un conteneur qui appelle une page html à l'aide d'une fonction javascript -->
-			<tr>
-				<td><div class="static" id="bandeau" ></div></td>
-				<td><div class="static" id="back"></div></td>
-			</tr>
+	<table id="wrapper">
+	<!-- Chaque case contient un conteneur qui appelle une page html à l'aide d'une fonction javascript -->
+		<tr>
+			<td><div class="static" id="bandeau" ></div></td>
+			<td><div class="static" id="back"></div></td>
+		</tr>
+		
+		<tr>
+			<td><div class="static" id="pagePort"></div></td>
+			<td><div class="static" id="logo"></div></td>
+		</tr>
 
-			<tr>
-				<td><div class="static" id="pagePort"></div></td>
-				<td><div class="static" id="logo"></div></td>
-			</tr>
-
-			<tr>
-				<td><div class="static" id="videGauche"></div></td>
-				<td><div class="static" id="videDroite"></div></td>
-			</tr>
-		</table>
-	</div>
+		<tr>
+			<td><div class="static" id="videGauche"></div></td>
+			<td><div class="static" id="videDroite"></div></td>
+		</tr>
+	</table>
 
 	<script src="js/initOptions.js"></script>
 	<script src="js/main.js"></script>
