@@ -344,11 +344,6 @@ body {
 	text-align: center;
 }
 
-.logoIBM {
-	height : 200px;
-	width : 280px;
-}
-
 .buttonMainPage {
 	cursor: pointer;
 	background: rgb(130,140,149); /* Old browsers */
