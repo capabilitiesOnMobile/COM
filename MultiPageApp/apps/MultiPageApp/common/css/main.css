@@ -202,21 +202,7 @@ table {
 /* Paramètres des cases des tableaux (voir les noms des classes pour comprendre) */
 td
 
-.mainPageCell {
-	font-family: arial;
-	width: 100%;
-	padding: 0px;
-	text-align: center;
-}
-
-.industriesCell {
-	font-family: arial;
-	width: 100%;
-	padding: 0px;
-	text-align: center;
-}
-
-.solutionsCell {
+.cell {
 	font-family: arial;
 	width: 100%;
 	padding: 0px;
